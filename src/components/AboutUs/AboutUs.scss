@@ -1,0 +1,193 @@
+@import "../../sassStyles/font";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.aboutUs__container {
+  height: 100vh;
+  margin: 0 20px;
+  //  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //left
+  &__images {
+    width: 50%;
+    height: 85%;
+    @include Flexbox();
+    //background-color: red;
+  }
+  &__images__mini {
+    //border: 2px solid $Yellow;
+    background-image: url("../../assets/realtorPhoto1.jpg");
+    background-size: cover;
+    //border: 2px solid blue;
+    position: relative;
+    border-radius: 47% 30% 30% 70% / 58% 40% 60% 40%;
+    height: 100%;
+    //object-fit: cover;
+    //background-size: 50% 50%;
+    //background-attachment: local;
+    width: 100%;
+    @include Flexbox();
+  }
+  /*
+  &--imagePhoto {
+    //border: 2px solid red;
+    width: 350px;
+    height: 100%; //500px;
+    background-attachment: fixed;
+  }
+  &--imageBorder {
+    z-index: -1;
+    width: 350px;
+    height: 100%;
+    right: 70px;
+    bottom: 40px;
+    position: absolute;
+    //border: 2px solid black;
+  }
+  */
+
+  //right
+  &__section {
+    // border: 2px solid green;
+    width: 60%;
+    margin: 0 auto;
+    @include Flexbox();
+  }
+  &__mini {
+    // border: 2px solid red;
+    width: 85%;
+  }
+  &--title {
+    font-family: $Rubik;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  &--highlight {
+    display: block;
+    color: $Yellow;
+    font-size: 40px;
+  }
+  &--line {
+    letter-spacing: -10px;
+  }
+  &--subtitle {
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+    font-family: $Nova;
+    // line-height: 15px;
+  }
+  
+  &__container {
+    //border: 2px solid yellowgreen;
+    display: flex;
+    margin: 25px 0;
+  }
+
+  &__number {
+    margin-right: 10%;
+  }
+  &--number {
+    font-size: 30px;
+    font-family: $Rubik;
+    color: transparent;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: $Yellow;
+  }
+  &__content__container {
+    //border: 2px solid blue;
+    //width: 100%;
+   // border: 2px solid red;
+  }
+  &__content--title {
+    font-family: $Nova;
+    //    margin-bottom: 15px;
+    //  margin-top: 15px;
+
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__content--text {
+    font-family: $Nova;
+    margin-top: 10px;
+    line-height: 26px;
+    font-weight: thin;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .aboutUs__container {
+    height: 200vh;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    //left
+    &__images {
+      width: 90%;
+      height: 45%;
+    }
+
+    &__section {
+      //border: 2px solid green;
+      width: 100%;
+    }
+    &__mini {
+      // border: 2px solid red;
+      width: 80%;
+    }
+    &--title {
+      text-align: center;
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .aboutUs__container {
+    width: 95%;
+    height: 145vh; //150
+    &__section {
+      height: 50%;
+      //border: 2px solid green;
+      // width: 100%;
+    }
+
+    //left
+    &__images {
+     // margin-top: 20px;
+       width: 90%;
+     height: 26%;
+    }
+    &__mini {
+      // border: 2px solid red;
+      width: 100%;
+    }
+    &--title {
+      font-size: 42px;
+      //border: 2px solid red;
+   
+    }
+  }
+}
+
+
+@media only screen and (max-width: 403px) {
+  .aboutUs__container{
+    &--title {
+      font-size: 30px;
+ //     border: 2px solid red;
+   
+    }
+    &--highlight{
+      font-size: 30px;
+    }
+    &__number{
+      margin-right: 3%;
+    }
+  }
+}

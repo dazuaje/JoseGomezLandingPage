@@ -1,0 +1,18 @@
+@import "../../sassStyles/font";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+.copyright__container{
+    background-color: $Yellow;
+    color: $Black;
+    height: 10vh;
+    @include Flexbox();
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $Nova;
+}
+
+@media only screen and (max-width: 600px) {
+.copyright__container{
+    font-size: 15px;
+}
+  }

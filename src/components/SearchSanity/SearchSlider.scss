@@ -1,0 +1,27 @@
+
+.overlay {
+    position: relative;
+    //border: 2px solid red;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 8%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $Rubik;
+    border: 2px solid $Yellow;
+    color: $Black;
+    background-color: $Yellow;
+    border-radius: 10px;
+    padding: 0.2rem 0.9rem;
+    left: 1%;
+  }
+  .search__container__right--img {
+    // display: flex;
+    //  justify-content: center;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 295px;
+    margin: 0.7rem auto;
+    width: 370px;
+  }

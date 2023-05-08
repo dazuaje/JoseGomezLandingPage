@@ -1,0 +1,328 @@
+@import "../../sassStyles/font";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.search__container {
+//  border: 2px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  //Map
+  &__container__map {
+    // border: 2px solid green;
+    width: 50%;
+    position: relative;
+  }
+  &__container--map {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    //border: 2px solid $Yellow;
+  }
+
+  //Right
+  &__right {
+    //  border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  &__right .swiper-slide.swiper-slide-next {background-color: transparent;}
+  &__right__mini {
+    width: 80%;
+    //  border: 2px solid saddlebrown;
+  }
+  &__right--title {
+    margin-top: 10px;
+    font-family: $Rubik;
+    font-weight: bold;
+    //text-align: center;
+    color: $Black;
+    font-size: 45px;
+  }
+  &__right--img {
+    // display: flex;
+    //  justify-content: center;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 295px;
+    margin: 0.7rem auto;
+    width: 370px;
+  }
+  &__right--subtitle {
+    font-family: $Nova;
+    font-weight: bold;
+    font-size: 25px;
+    color: $Black;
+  }
+  &__right--p {
+    //margin: 10px 0;
+    height: 45px;
+  }
+  //Inside icon
+  &__right__icons {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  &__right--price {
+    font-size: 30px;
+    padding-right: 1rem;
+    // border-right: 2px solid gray;
+    font-family: $Rubik;
+    font-weight: bold;
+  }
+
+  //Icon
+  &__right__icon {
+    @include Flexbox();
+    margin-left: 10px;
+  }
+  &__right--icon {
+    border-left: 2px solid gray;
+    padding-left: 10px;
+  }
+  &__right--quantity {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8px;
+  }
+}
+
+.overlay {
+  position: relative;
+  //border: 2px solid red;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 8%;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: $Rubik;
+  border: 2px solid $Yellow;
+  color: $Black;
+  background-color: $Yellow;
+  border-radius: 10px;
+  padding: 0.2rem 0.9rem;
+  left: 1%;
+}
+
+//Icon map
+/* 
+.leaflet-div-icon{
+  background-color: black;
+  width: 500px;
+}
+.map__container{
+  //padding: 2rem 3rem;  
+  height: 100px;
+  background-color: red !important;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map__container--img{
+  // height: 100px !important;
+    border: 2px solid red;
+    padding: 1rem 2rem;
+   // width: 100px !important;
+  }
+  .map__container--title{
+    font-family: $Rubik;
+    font-size: 25px;
+    color: red;
+  }
+
+  .search__container__container__map .search__container__container--map .div{
+  background-color: aqua;
+}
+*/
+
+.request-popup .leaflet-popup-content-wrapper {
+  border-radius: 0px;
+  padding: 1rem 1rem;
+
+  margin: 0;
+}
+
+//Icon popup
+.container__popup {
+  height: 250px;
+  margin-top: 30px;
+  width: 200px;
+  &--img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  &--price {
+    margin-top: 10px;
+    font-family: $Rubik;
+    color: $Yellow;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 1000;
+  left: 14%;
+  top: 2%;
+  select:active,
+  select:hover {
+    outline: none;
+  }
+
+  /* make it red instead (with with same width and style) */
+  select:active,
+  select:hover {
+    outline-color: red;
+  }
+  &__select1,
+  &__select2 {
+    background-color: $Yellow;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-family: $Rubik;
+    color: $Black;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .dropdown {
+    left: 20%;
+
+    &__select1,
+    &__select2 {
+      // background-color: red;
+      padding: 4px 15px;
+      font-size: 14px;
+      font-family: $Rubik;
+      color: $Black;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .search__container {
+    flex-direction: column;
+    height: 150vh; //110
+    // border: 2px solid red;
+
+    &__container__map {
+      width: 100%;
+      height: 50%;
+    }
+    &__right {
+      width: 100%;
+      // height: 50%;
+    }
+    &__right__mini {
+   //   border: 2px solid yellow;
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .search__container {
+    &__right__mini {
+      width: 80%;
+    }
+    &__right--title {
+      margin-top: 5px;
+      display: none;
+      font-size: 35px;
+    }
+    &__right--img {
+      height: 250px;
+    }
+    &__right--subtitle {
+      font-size: 25px;
+    }
+    &__right__icons {
+      display: flex;
+      //justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+    }
+    &__right--price {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .search__container {
+    height: 110vh;
+    justify-content: space-around;
+    &__right__mini {
+     // background-color: red;
+      width: 95%;
+    }
+
+    &__container__map {
+      width: 100%;
+      height: 50%;
+    }
+    &__right--img {
+      width: 100%;
+    }
+    &__right--price {
+      padding-right: 0rem;
+    }
+    &__right__icon {
+      margin-left: 4px;
+    }
+  }
+
+
+
+
+//Icon popup
+.container__popup {
+  height: 160px;
+  margin-top: 0px;
+  width: 200px;
+  //background-color: red;
+  &--img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  &--price {
+    margin-top: 0px;
+    font-family: $Rubik;
+    color: $Yellow;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+}
+
+}
+/*
+*/
+
+
+@media only screen and (max-width: 380px) {
+  .search__container{
+  //  background-color: red;
+  }
+}
+
+
+
+.search__container__right #root
+  > div
+  > section.listing__container
+  > div.carousel
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  display: none;
+}

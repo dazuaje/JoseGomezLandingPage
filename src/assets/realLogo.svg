@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.021" height="129.501" viewBox="0 0 105.021 129.501">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.79" y1="1.094" x2="0.108" y2="0.176" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcc757"/>
+      <stop offset="0.23" stop-color="#b9701e"/>
+      <stop offset="0.33" stop-color="#f1b84c"/>
+      <stop offset="0.58" stop-color="#f1b84c"/>
+      <stop offset="0.69" stop-color="#9f5d14"/>
+      <stop offset="1" stop-color="#f1b84c"/>
+    </linearGradient>
+    <filter id="Union_5" x="0" y="0" width="105.021" height="129.501" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Union_5)">
+    <path id="Union_5-2" data-name="Union 5" d="M1766.561,420.846V372.789h9.31v38.787h22.275V358.355l-34.2-35.6-34.2,35.6v53.221h22.276V372.789h9.309v48.057h-40.893v-66.19l43.507-45.311,0,0,.005,0,43.506,45.311v66.19Zm17.655-14.377v-39.95l-20.271-20.507-20.272,20.508v39.949h-6.982v-42.8l27.255-27.57,27.253,27.571v42.8Z" transform="translate(-1711.43 -303.35)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+
+@import '../../sassStyles/font';
+@import '../../sassStyles/variables';
+.swiper-2{
+
+ 
+}
+.testimonial__container__background{
+    //height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    
+    //    border: 2px solid yellow;
+    &__mini{
+        width: 100%;
+    min-height:350px;
+        padding: 2.5rem 0;
+        border: 2px solid $Yellow;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &--title{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        height: 30px;
+        font-family: $Rubik;
+    }
+    &--p{
+        margin: 25px 10px;
+        font-family: $Nova;
+        //font-size: 15px;
+        text-align: center;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--icon{
+        color: Yellow;
+    }
+}
+
+.swiper-slide.swiper-slide-next{
+    border-radius: 10px;
+    background-color: $Yellow;
+    //height: 100%;
+}
+.swiper-slide.swiper-slide-next  .testimonial__container__background--icon{
+    color: #330 !important;
+}
+.swiper-slide.swiper-slide-next .testimonial__container__background{
+    color: $Black;
+}
+//Arrow
+.testimonial__container__carousel .swiper-button-next, .testimonial__container__carousel .swiper-button-prev {
+    color: transparent !important;
+}
+
+#testimonial > div.testimonial__container__carousel > div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+    display: none;
+}
+.carousel  .swiper-slide.swiper-slide-next{
+    background-color:$White !important;
+} 
+@media only screen and (max-width: 1010px) {
+    .testimonial__container__background{
+        height: 100%;
+        //margin-bottom: 20PX;
+    }
+}
+
+
+@media only screen and (max-width: 678px) {
+    .swiper-slide.swiper-slide-next{
+        //border-radius: 10px;
+        background-color: transparent;
+    }
+    .swiper-slide.swiper-slide-next .testimonial__container__background{
+        color: $White;
+    }
+
+    .swiper-slide.swiper-slide-next  .testimonial__container__background--icon{
+        color: $Yellow !important;
+    }
+}
+/*
+*/

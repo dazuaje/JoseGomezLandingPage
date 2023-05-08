@@ -1,0 +1,85 @@
+@import "../../sassStyles/font";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.newsletter {
+  height: 100vh;
+  @include Flexbox();
+//  border: 2px solid blue;
+
+}
+.newsletter__container {
+  height: 50vh;
+  //margin: 20px 0;
+  //border: 2px solid yellow;
+  //background-color: $Yellow;
+  background-image: url("../../assets/NewsletterSection.png");
+  background-size: cover;
+  border-radius: 48px;
+  width: 90%;
+  margin: 0 auto;
+  @include Flexbox();
+  &__mini {
+    //border: 2px solid red;
+  }
+  &--title {
+    font-size: 40px;
+    font-family: $Rubik;
+    text-align: center;
+  }
+  &--p {
+    text-align: center;
+    margin: 5px 0 30px 0;
+    font-family: $Nova;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &__form {
+    @include Flexbox();
+    text-align: center;
+    // border: 2px solid red;
+  }
+
+  &--input,
+  &--input:focus {
+    padding: 10px 13px;
+    border: 0;
+    outline: 0;
+  }
+  &--submit {
+    height: 35px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid $White;
+    background-color: $Yellow;
+  }
+}
+
+@media only screen and (max-width: 543px) {
+  .newsletter{
+  height: 80vh;
+
+  }
+  .newsletter__container {
+    width: 95%;
+    &--title {
+      font-size: 35px;
+    }
+    &--p {
+      font-size: 20px;
+      //margin: 0 5px;
+      margin: 5px 5px 30px 5px;
+    }
+    &__form {
+      width: 100%;
+      // margin: 0 20px;
+    }
+    &--input {
+      width: 150px;
+    }
+    &--submit {
+      font-size: 15px;
+    }
+  }
+}

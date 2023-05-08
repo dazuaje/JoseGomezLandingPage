@@ -1,0 +1,65 @@
+@import "../../sassStyles/_font";
+@import "../../sassStyles/_mixins";
+@import "../../sassStyles/_variables";
+.listing__container {
+  height: 100vh;
+ // border: 2px solid red;
+  &__header {
+    //border: 2px solid yellowgreen;
+    justify-content: space-around;
+    display: flex;
+    height: 20%;
+    align-items: center;
+  }
+  &__header__text {
+   // border: 2px solid yellow;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .carousel{
+    //height: 500px;
+  //  border: 2px solid yellow;
+  }
+  &--title {
+    font-family: $Rubik;
+    font-size: 30px;
+    font-weight: medium;
+    color: $Yellow;
+  }
+  &--subtitle {
+    color: $Black;
+    font-size: 50px;
+    font-family: $Rubik;
+  }
+}
+
+
+
+@media only screen and (max-width: 637px) {
+  .listing__container{
+    &--title {
+      font-size: 20px;
+    }
+    .btnNone{
+      display: none;
+    }
+    &--subtitle {
+      font-size: 40px;
+    }
+  }
+  }
+
+@media only screen and (max-width: 440px) {
+  .listing__container{
+
+    &--title {
+      font-size: 15px;
+    }
+    &--subtitle {
+      font-size: 35px;
+    }
+  }
+}

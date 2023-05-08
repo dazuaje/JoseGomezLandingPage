@@ -1,0 +1,148 @@
+@import "../../sassStyles/font";
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.hero__container {
+  height: 550px;
+  // border: 2px solid red;
+  @include Flexbox();
+  &__mini {
+    width: 70%;
+    height:85%;
+    //height: 0%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  &--title {
+    font-family: $Rubik;
+    font-size: 60px;
+    width: 860px;
+    //    border: 2px solid green;
+    font-weight: 500;
+    color: $White;
+  }
+  &--highlight {
+    color: $Yellow;
+  }
+  &--subtitle {
+    margin: 15px 0 25px 0;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: $Nova;
+    color: $White;
+  }
+
+  &--input,
+  &--input:focus {
+    padding: 10px 13px;
+    border: 0;
+    outline: 0;
+  }
+  .submit {
+    background-color: $Yellow;
+    margin-bottom: 90px;
+  }
+
+  //Contact
+  &__contact {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    //border: 2px solid red;
+    cursor: pointer;
+    background-color: $Yellow;
+    width: 250px;
+    border-radius: 11px;
+    height: 60px;
+    //background-repeat: no-repeat;
+    //background-size: contain;
+    // background-image: url("../../assets/heroNumber.png");
+  }
+
+  &__contact__icon {
+    background-color: $White;
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin-right: 10px;
+  }
+  &__contact--icon {
+    color: $Black;
+  }
+  &__contact--text {
+    font-weight: bold;
+    color: $Black;
+    font-family: $Rubik;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .hero__container {
+    @include Flexbox();
+    &__mini {
+     // border: 2px solid blue;
+      width: 70%;
+      height: 100%;
+      align-items: center;
+    }
+    &__form {
+      display: none;
+    }
+
+    &--title {
+      font-size: 3.4rem;
+      width: 100%;
+      text-align: center;
+   //   border: 2px solid green;
+    }
+    &--highlight {
+      color: $Yellow;
+    }
+    &--subtitle {
+      margin: 15px 0 25px 0;
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+      font-family: $Nova;
+      color: $White;
+    }
+  }
+}
+@media only screen and (max-width: 745px) {
+  .hero__container{
+    &__mini{
+      width: 90%;
+    }
+    &--title {
+      font-size: 3rem;
+      width: 100%;
+ //     border: 2px solid green;
+    } 
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .hero__container{
+    &__mini{
+      width: 95%;
+    }
+    &--title{
+      font-size: 2.7rem;
+    }
+    &--subtitle{
+      font-size: 23px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 369px) {
+  .hero__container{
+    &--title{
+      font-size:2.3rem ;
+    }
+  }
+}

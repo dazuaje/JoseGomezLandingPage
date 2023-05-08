@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "property": "Miami House 1",
+    "latitud": 25.785009676407324,
+    "longitud": -80.26554311128895,
+    "price": 100000,
+    "images": [
+    "./building7.jpg",
+    "./building8.jpg",
+    "./building9.jpg"
+
+
+    ],
+    "bathroom": 2,
+    "surface": "300ft",
+    "bed": 3,
+    "direction": "Av. Florida",
+    "typeProperty": "House",
+    "typeOfContract": "Rent"
+  },
+  {
+    "id": 2,
+    "property": "Miami House 2",
+    "latitud": 25.80085199165225,
+    "longitud": -80.290004856417615,
+    "price": 500,
+    "images": ["./building10.jpg"],
+    "bathroom": 4,
+    "surface": "800ft",
+    "bed": 5,
+    "direction": "Av. Florida",
+    "typeProperty": "Apartment",
+    "typeOfContract": "Rent"
+  },
+  {
+    "id": 3,
+    "property": "Miami House 3",
+    "latitud": 25.8005428935572,
+    "longitud": -80.21378720842584,
+    "price": 300,
+    "images": ["./building2.jpg", "./building11.jpg"],
+    "bathroom": 1,
+    "surface": "40ft",
+    "bed": 2,
+    "direction": "Av. Florida",
+    "typeProperty": "Apartment",
+    "typeOfContract": "Sale"
+  },
+  {
+    "id": 4,
+    "property": "Miami House 4",
+    "latitud": 25.77225517342416,
+    "longitud": -80.24947428496318,
+    "price": 400,
+    "images": ["./building14.jpg", "./building12.jpg", "./building13.jpg"],
+    "bathroom": 1,
+    "surface": "200ft",
+    "bed": 2,
+    "direction": "Av. Florida",
+    "typeProperty": "House",
+    "typeOfContract": "Rent"
+  }
+]
